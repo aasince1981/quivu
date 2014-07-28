@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listtv"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    android:cacheColorHint="#00000000"
+    android:gravity="left|center|center_vertical"
+    android:singleLine="true"
+    android:text=""
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:paddingLeft="5dp"
+   >
+
+</TextView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_right" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_itemname_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/chat_text_field_new"
+            android:hint="Name of the item you are selling"
+            android:paddingLeft="10dp"
+            android:inputType="textCapWords"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_desc_item"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/chat_text_field_new"
+            android:hint="(Optional)\nDescribe more about what you are selling."
+            android:paddingLeft="10dp"
+            android:inputType="textCapWords"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/map_icon" />
+
+        <TextView
+            android:id="@+id/tv_location_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/chat_text_field_new"
+            android:hint="Specify a place where you prefer to meet buyer."
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_cancel_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/cross_icon_grey" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Tip: Set Location Services to ON to skip entering deal\n location."
+        android:textColor="@color/light_grey"
+        android:textSize="12sp" />
+
+</LinearLayout>

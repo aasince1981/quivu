@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_grey"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp" >
+
+        <ImageView
+            android:id="@+id/iv_user_listitem_comment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+             android:src="@drawable/default_user"
+            android:layout_margin="10dp"
+            android:contentDescription="@null" />
+
+       <!--  <ProgressBar
+            android:id="@+id/pb_profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" /> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_username_listitem_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="left|center_vertical"
+            android:padding="3dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/black_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_comment_listitem_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="left|center_vertical"
+            android:padding="3dp"
+            android:text=""
+            android:textColor="@color/black_light"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time_listitem_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@drawable/clock_icon"
+        android:drawablePadding="3dp"
+        android:gravity="left|center_vertical"
+        android:paddingRight="5dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</LinearLayout>

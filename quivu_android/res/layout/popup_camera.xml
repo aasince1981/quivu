@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp" >    
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Take your photo from"
+            android:textSize="18dp"
+             android:textColor="@color/app_green" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_green" />
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:orientation="vertical"
+         android:padding="10dp" >
+        
+        <TextView
+            android:id="@+id/camera_popup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/popup_camera"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Camera"
+            android:textStyle="bold"
+            android:textSize="18dp"
+             android:textColor="@color/grayless"  />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/gallary_popup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/popup_gallery"
+             android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Gallery"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/grayless" />
+
+        <View
+            android:id="@+id/bottom_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray" />
+        
+         <TextView
+            android:id="@+id/delete_popup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/popup_delete"
+             android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Remove"
+            android:textSize="18dp"
+             android:textStyle="bold"
+           android:textColor="@color/grayless"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

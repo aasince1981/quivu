@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_back" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_search_FIfriends"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/search_big_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="Search by Username"
+                android:textColor="@color/grey"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/tv_recommended_users_FIfriends"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:drawableLeft="@drawable/blue_star"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="Recommended Users"
+                android:textColor="@color/grey"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/tv_promote_RELOVED_FIfriends"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:drawableLeft="@drawable/promotegreen_icon"
+                android:drawablePadding="5dp"
+               android:gravity=""
+                android:text="Promote Quivu"
+                android:textColor="@color/grey"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="FIND FRIENDS ON QUIVU"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/tv_find_facebook_FIfriends"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:drawableLeft="@drawable/facebook_small_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="Facebook"
+                android:textColor="@color/grey"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="INVITE FRIENDS"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/tv_invite_facebook_FIfriends"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:drawableLeft="@drawable/facebook_small_icon"
+                android:drawablePadding="5dp"
+                  android:gravity="center_vertical"
+                android:text="Facebook"
+                android:textColor="@color/grey"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/tv_invite_contects_FIfriends"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:drawableLeft="@drawable/contact_icon"
+                android:drawablePadding="5dp"
+                android:text="Contacts"
+                  android:gravity="center_vertical"
+                android:textColor="@color/grey"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="SHOUTOUT"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/tv_shoutout_facebook_FIfriends"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:drawableLeft="@drawable/facebook_small_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="Facebook"
+                android:textColor="@color/grey"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/tv_shoutout_twitter_FIfriends"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:drawableLeft="@drawable/twitter_small"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="Twitter"
+                android:textColor="@color/grey"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:gravity="center"
+             
+                android:text="Loving using Quivu? Help share the love by inviting your friends to join you!"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

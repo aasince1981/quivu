@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/header_img" >
+
+        <ImageView
+            android:id="@+id/iv_cross_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/cross_icon" />
+
+        <ImageView
+            android:id="@+id/iv_flash_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_camera_option"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/flash_off"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_camera_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_divider_camera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/camera_icon_sml"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_divider_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/option_icon" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="412dp"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/pb_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/flBtnContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/footer_img"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/camera_big" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

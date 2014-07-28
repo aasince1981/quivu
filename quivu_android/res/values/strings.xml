@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">quivu</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="NETWORK_ERROR">There\'s no network connection right now. Please check your wifi connection or mobile data.</string>
+    <string name="APP_BASE_URL">http://mobilitytesting.com/quivu-app/webServices/</string>
+    
+    <string name="method_login">login.php?method=checkLogin</string>
+    <string name="method_registration">userRegistration.php?method=userRegistrations</string>
+    <string name="method_editProfile">editProfile.php?method=editProfile</string>
+    <string name="method_getContentPage">getContentPage.php?method=getContentPage</string>
+    <string name="method_changePassword">changePassword.php?method=ChangePasssword</string>
+    <string name="method_getCountries">getCountries.php?method=getCountries</string>
+    <string name="method_getCategories">getCategory.php?method=getCategories</string>
+    <string name="method_profile_me">profileView.php?method=viewProfile</string>
+    <string name="method_baseurl">baseUrl.php?method=baseURL</string>
+    <string name="method_forgotpassword">forgetPassword.php?method=forgetPassword</string>
+    <string name="method_getProduct">getProduct.php?method=getProducts</string>
+    <string name="method_viewProduct">products.php?method=viewProduct</string>
+    <string name="method_getActivities">getActivity.php?method=getActivities</string>
+    <string name="method_getOffers">offer.php?method=getOffers</string>
+    <string name="method_addOffer">offer.php?method=addOffer</string>
+    <string name="method_getLikesUsers">likes.php?method=getLikesUsers</string>
+    <string name="method_addLike">likes.php?method=addLike</string>
+    <string name="method_getFollower">follow.php?method=getFollower</string>
+    <string name="method_getFollowing">follow.php?method=getFollowing</string>
+    <string name="method_offerMadeByme">offer.php?method=offerMadeByme</string>
+    <string name="method_stuffLikes">likes.php?method=stuffLikes</string>
+    <string name="method_addFollow">follow.php?method=addFollow</string>
+    <string name="method_getFeedback">feedback.php?method=getFeedback</string>
+    <string name="method_addFeedback">feedback.php?method=addFeedback</string>
+    <string name="method_searchProduct">searchProduct.php?method=productFilter</string>
+    <string name="method_addcomment">comments.php?method=addcomment</string>
+    <string name="method_deleteComment">comments.php?method=deleteComment</string>
+    <string name="method_cancelOffer">offer.php?method=cancelOffer</string>
+    <string name="method_getMessages">messages.php?method=getMessages</string>
+    <string name="method_addMessages">messages.php?method=addMessages</string>
+    <string name="method_editFeedback">feedback.php?method=editFeedback</string>
+    <string name="method_addProduct">products.php?method=addProduct</string>
+    <string name="method_editProduct">products.php?method=editProduct</string>
+    <string name="method_deleteProduct">products.php?method=deleteProduct</string>
+    <string name="method_acceptOffer">offer.php?method=acceptOffer</string>
+    <string name="method_markAsSold">products.php?method=markAsSold</string>
+    <string name="method_setting">settings.php?method=setting</string>
+    <string name="method_searchUsers">searchUser.php?method=searchUsers</string>
+    <string name="method_getPromotion">getPromotion.php?method=getPromotion</string>
+    <string name="method_commonFriendList">facebookCommonFriend.php?method=commonFriendList</string>
+    <string name="method_resendVerifEmail">editProfile.php?method=resendMail</string>
+    
+    
+    <string name="FACEBOOK_APPID">473112902823855</string> <!-- by kramk321 account -->
+    <string name="TWITTER_CONSUMER_KEY">yPrKGURSEVC00Rjdof4xA</string>
+    <string name="TWITTER_CONSUMER_SECRET">mV8LeXcO3Ou9pDQYQeZu4qiiI1s69zZTcHewd4KJfTI</string>
+    <string name="WEBSITE">http://mobilitytesting.com/quivu-app</string>
+    <string name="AVIARY_API_SECRET">ea592396cc9989f7</string> <!-- by kramk321 account -->
+    <string name="AVIARY_API_KEY">ec115a89e5d71a14</string> <!-- by kramk321 account -->
+
+    <!-- <string name="FACEBOOK_APPID">473112902823855</string> -->
+    <!-- provided by kramk account -->
+    <!-- <string name="FACEBOOK_APPID">663359740364804</string> -->
+    <!-- provided by chetan account (approved) -->
+    <string name="please_wait">Please wait&#8230;</string>
+    <string name="logging_in">Logging in&#8230;</string>
+    <string name="signing_up">Signing up&#8230;</string>
+    <string name="signing_in">Signing in&#8230;</string>
+    <string name="play_services_error">Google Play services is not available.  This application will close.</string>
+    <string name="close">Close</string>
+    
+    <!-- Profile Me -->
+     <string name="msg_for_not_verified">Your listing cannot be browsed/searched until you verify your email.</string>
+    
+     <!-- Profile Me Edit-->
+     <string name="RESEND_VERIF_EMAIL">Resend Verification email</string>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tabMedium">#2B2B2B</color>
+    <color name="tabDark">#000000</color>
+    <color name="tabTransparent">#10ffffff</color>
+    <color name="black_light">#ff2b2b2b</color>
+    <color name="Transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="red">#ffff0000</color>
+    <color name="green">#01d173</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="yellow">#ffdc00</color>
+    <color name="facebook">#3B5998</color>
+    <color name="grayless">#a9a9a9</color>
+    <color name="lb_blue">#1b4397</color>
+    <color name="map_color">#F52887</color>
+    <color name="l_color">#90b80f</color>
+    <color name="l_color1">#1f9ae7</color>
+    <color name="yello_green">#9ACD32</color>
+    <color name="orange">#E47833</color>
+    <color name="lite_blue">#4E78A0</color>
+    <color name="grey">#C0C0C0</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="menu_icon_color">#0840e2</color>
+    <color name="app_green">#71afab</color>
+    <color name="light_grey">#e3e3e3</color>
+    <color name="user_imagebg_color">#c9e5ef</color>
+    <color name="divider_color">#bbbbbb</color>
+    <color name="promote_bg">#f2f2f2</color>
+   
+     <color name="quivu_red">#b20000</color>
+     <color name="quivu_blue">#2C5DCD</color>
+    
+
+</resources>

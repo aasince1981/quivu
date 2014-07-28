@@ -1,0 +1,116 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "NetworkRequest.h"
+    #import "LoadingViewController.h"
+    #import "AppDelegate.h"
+    #import "Image.h"
+    #import "NetworkReachability.h"
+    #import "NetworkConnection.h"
+    #import "NSString+Custom.h"
+    #import "UIImageView+Custom.h"
+
+#endif
+
+#define KeyboardHeight 70
+#define KAppDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+#define isIPhone ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+#define isIPad ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+#define ScreenHeight  [[UIScreen mainScreen] bounds].size.height
+
+#define getNetworkConnection ((NetworkConnection *)[[NetworkConnection alloc] init])
+#define kInternetNotAvailable @"There's no network connection right now. Please check your wifi connection or cellular data."
+#define kCouldnotconnect @"Could not connect to the server please enable wifi go to settings -> wifi -> on."
+#define kCouldnotconnectServer @"Could not connect to the server. Please try again later."
+#define ScreenHeight  [[UIScreen mainScreen] bounds].size.height
+#define DeviceVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define AppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+#define Device_IMEI [[[UIDevice currentDevice] identifierForVendor] UUIDString]  //@"123456789"//
+#define IS_IPHONE_5 ([[UIScreen mainScreen] bounds].size.height == 568.0f)
+
+#define KFBAppID @"473112902823855"
+#define KFBSecretID @"1e9a38169b6dd911db33d97f1e9b1ff4"
+
+//#define KFBAppID @"575713582512918"
+//#define KFBSecretID @"309118ddbd0c7ca62a76e3a3fa0a12aa"
+#define FACEBOOKID @"FACEBOOKID"
+
+#define FONT_Lato_Bold(s) [UIFont fontWithName:@"Lato-Bold" size:s]
+#define FONT_Lato_Light(s) [UIFont fontWithName:@"Lato-Light" size:s]
+
+#define WS_UserRegistrations @"WS_UserRegistrations"
+#define WS_Login @"WS_Login"
+#define WS_ForgotPassword @"WS_ForgotPassword"
+#define WS_GetCategories @"WS_GetCategories"
+#define WS_ViewProfile @"WS_ViewProfile"
+#define WS_ChangePasssword @"WS_ChangePasssword"
+#define WS_GetProducts @"WS_GetProducts"
+#define WS_AddLike @"WS_AddLike"
+#define WS_ViewProduct @"WS_ViewProduct"
+#define WS_AddOffer @"WS_AddOffer"
+#define WS_GetFollowing @"WS_GetFollowing"
+#define WS_GetFollower @"WS_GetFollower"
+#define WS_AddFollow @"WS_AddFollow"
+#define WS_EditProfile @"WS_EditProfile"
+#define WS_ProductFilter @"WS_ProductFilter"
+#define WS_StuffLikes @"WS_StuffLikes"
+#define WS_OfferMadeByme @"WS_OfferMadeByme"
+#define WS_CancelOffer @"WS_CancelOffer"
+#define WS_Addcomment @"WS_Addcomment"
+#define WS_DeleteComment @"WS_DeleteComment"
+#define WS_AddMessages @"WS_AddMessages"
+#define WS_GetMessages @"WS_GetMessages"
+#define WS_GetOffers @"WS_GetOffers"
+#define WS_GetLikesUsers @"WS_GetLikesUsers"
+#define WS_GetContentPage @"WS_GetContentPage"
+#define WS_CommunityRule @"CommunityRule"
+#define WS_Privacy @"Privacy"
+#define WS_AboutApp @"AboutApp"
+#define WS_Termsandconditions @"Termsandconditions"
+#define WS_GetActivites @"WS_GetActivites"
+#define WS_Setting @"WS_Setting"
+#define WS_GetFeedback @"WS_GetFeedback"
+#define WS_AddFeedback @"WS_AddFeedback"
+#define WS_SearchUsers @"WS_SearchUsers"
+#define WS_EditFeedback @"WS_EditFeedback"
+#define WS_GetPromotion @"WS_GetPromotion"
+#define WS_CommonFriendList @"WS_CommonFriendList"
+#define WS_AddProduct @"WS_AddProduct"
+#define WS_EditProduct @"WS_EditProduct"
+#define WS_DeleteProduct @"WS_DeleteProduct"
+#define WS_MarkAsSold @"WS_MarkAsSold"
+#define WS_ResendMail @"WS_ResendMail"
+
+
+#define DateFormate @"yyyy-MM-dd-hh-mm-ss"
+#define TimeZone @"America/Chicago"
+
+/* Google Plus Integration*/
+#define Callbakc @"http://localhost"
+#define ScopeUrl @"https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+https://www.google.com/reader/api/0/subscription"
+#define Visibleactions @"http://schemas.google.com/AddActivity"
+#define KClientID @"653061124917-kp4h34aet0nc4pp16sa6v4926ppj7d2r.apps.googleusercontent.com"
+#define KSecretId @"awXEekk_cqypaschZYhjn7J0"
+#define GooglePlusID @"GooglePlusID"
+
+#define Key_LoginDetail @"Key_LoginDetail"
+
+
+
+
+
+

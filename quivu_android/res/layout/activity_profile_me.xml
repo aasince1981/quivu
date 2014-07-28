@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_profile_me" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:orientation="vertical" >
+
+            <!-- user layout -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/profile_bg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_user_profile_me"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:background="@color/user_imagebg_color"
+                    android:contentDescription="@null"
+                    android:padding="5dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_name_profile_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="@color/white"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_city_profile_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="@color/white"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_smiley"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_happy_profile_me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/positive_icon"
+                            android:drawablePadding="5dp"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_normal_profile_me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:drawableLeft="@drawable/neutral_ico"
+                            android:drawablePadding="5dp"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_sad_profile_me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:drawableLeft="@drawable/negative_icon"
+                            android:drawablePadding="5dp"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- end user layout -->
+
+
+            <!-- followers layout -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_followers_profile_me"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="followers"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider_color" />
+
+                    <TextView
+                        android:id="@+id/tv_offers_made_profile_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:drawableLeft="@drawable/offer_icon"
+                        android:drawablePadding="3dp"
+                        android:gravity="center"
+                        android:text="Offers Made"
+                        android:textColor="@color/app_green"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/divider_color" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_following_profile_me"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="following"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider_color" />
+
+                    <TextView
+                        android:id="@+id/tv_items_liked_profile_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:drawableLeft="@drawable/like_icon"
+                        android:drawablePadding="3dp"
+                        android:gravity="center"
+                        android:text="Items Liked"
+                        android:textColor="@color/app_green"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/divider_color" />
+
+                <LinearLayout
+                    android:id="@+id/layout_promote"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/app_green"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_promote_profile_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@drawable/promote_icon"
+                        android:drawablePadding="3dp"
+                        android:gravity="center"
+                        android:text="Promote"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- end followers layout -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:padding="8dp" >
+
+                <TextView
+                    android:id="@+id/tv_joindate_profile_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="Join date"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_verified_profile_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/verified_icon"
+                    android:gravity="center"
+                    android:text="Verified"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/tv_website_profile_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/app_green"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp"
+                    android:layout_marginLeft="13dp"
+                    android:textSize="12sp" />
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divider_color" />
+            <!-- description layout -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.it.reloved.utils.ExpandableTextView
+                    android:id="@+id/tv_desc_profile_me"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="left|top"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <!--
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:id="@+id/tv_desc_profile_me"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="left|top"
+                        android:padding="5dp"
+                        android:text="dhfdshghhddfhghgiuhoxgouihasdiufhasdoiuhfoiuasdbfouiasdbfgoagbvshdfgbsdbgfgbfsdigbvisydfguivdsvgfgvisvadicgyfsavdisbgvduyfvyudsafuysadfcusadvcufoasvdfusdafcugbohfkxzhcbbsgvduyvckjzxbcjuizcyufzcvjkbzxgysdobabludhvc hzxjcunhuvdcublvvjhlbvuzsuopbsdvsvdfsvgdsfvgsdfvgsdvcfbhaolfckjnsdajklfvbhpuiwduofasdbasuhdbvbsduyvxusvucvcxuoyhvzxocvybzouvoccofcsdfsahbdfcsdagvsdfvgbsdfgvdsfgsdbougfbasdokufvhnisdfighsdfijoiguvfgdsfgf"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </ScrollView>
+                -->
+            </LinearLayout>
+            <!-- end description layout -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    android:layout_weight="1"
+                    android:background="@color/divider_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/down_arrow"
+                    android:text="Listings"
+                    android:textColor="@color/black_light"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+         <LinearLayout
+                android:id="@+id/lin_layout_info"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/quivu_red"
+                android:padding="5dp" >            
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/icon_info"
+                    android:text="@string/msg_for_not_verified"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>   
+            
+            <GridView
+                android:id="@+id/gridview_profile_me"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:gravity="center_horizontal"
+                android:horizontalSpacing="5dp"
+                android:numColumns="2"
+                android:paddingBottom="20dp"
+                android:verticalSpacing="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

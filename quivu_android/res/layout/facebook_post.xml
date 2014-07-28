@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/com_facebook_button_blue_normal"
+        android:padding="5dip" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="60dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/com_facebook_button_blue_pressed"
+            android:padding="5dip"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Post on Wall"
+            android:textColor="@color/white"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Share"
+            android:layout_width="60dip"
+            android:layout_height="32dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/com_facebook_button_blue_pressed"
+            android:padding="5dip"
+            android:text="Share"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:padding="5dip" >
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/white_img"
+            android:gravity="top|left"
+            android:hint="Write on your wall message"
+            android:padding="10dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_message"
+        android:padding="10dip" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/ic_launcher"
+            android:padding="10dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_image"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_marginTop="3dip"
+            android:text="www.idealittechno.com"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

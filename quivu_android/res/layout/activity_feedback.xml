@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_feedback" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_all_feedback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/feedback_selector"
+            android:padding="10dp"
+            android:text="ALL"
+            android:textColor="@color/app_green" />
+
+        <Button
+            android:id="@+id/btn_as_seller_feedback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/feedback_selector"
+            android:padding="10dp"
+            android:text="AS SELLER"
+            android:textColor="@color/app_green" />
+
+        <Button
+            android:id="@+id/btn_as_buyer_feedback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/feedback_selector"
+            android:padding="10dp"
+            android:text="AS BUYER"
+            android:textColor="@color/app_green" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/Transparent"
+        android:divider="@color/divider_color"
+        android:dividerHeight="0.5dp" />
+
+</LinearLayout>
